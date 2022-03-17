@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		2133890927E3B0D7002439A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2133890827E3B0D7002439A3 /* AppDelegate.swift */; };
 		2133890B27E3B0D7002439A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2133890A27E3B0D7002439A3 /* SceneDelegate.swift */; };
-		2133890D27E3B0D7002439A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2133890C27E3B0D7002439A3 /* ViewController.swift */; };
 		2133891327E3B0D7002439A3 /* Bookstore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2133891127E3B0D7002439A3 /* Bookstore.xcdatamodeld */; };
 		2133891527E3B0D9002439A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2133891427E3B0D9002439A3 /* Assets.xcassets */; };
 		2133891827E3B0D9002439A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2133891627E3B0D9002439A3 /* LaunchScreen.storyboard */; };
 		2133892027E3B1A7002439A3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2133891F27E3B1A7002439A3 /* README.md */; };
 		2133892227E3B1CC002439A3 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 2133892127E3B1CC002439A3 /* .gitignore */; };
+		2133892727E3BA1E002439A3 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2133892627E3BA1E002439A3 /* SplashViewController.swift */; };
 		F22E9C1FD40F4FF893B44275 /* Pods_Bookstore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F8A688F4DE88FC984E2BFD /* Pods_Bookstore.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,13 +23,13 @@
 		2133890527E3B0D7002439A3 /* Bookstore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookstore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2133890827E3B0D7002439A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2133890A27E3B0D7002439A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2133890C27E3B0D7002439A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2133891227E3B0D7002439A3 /* Bookstore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bookstore.xcdatamodel; sourceTree = "<group>"; };
 		2133891427E3B0D9002439A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2133891727E3B0D9002439A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2133891927E3B0D9002439A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2133891F27E3B1A7002439A3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2133892127E3B1CC002439A3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		2133892627E3BA1E002439A3 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		42F8A688F4DE88FC984E2BFD /* Pods_Bookstore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bookstore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90CC3BDE57528E272FA5E991 /* Pods-Bookstore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bookstore.release.xcconfig"; path = "Target Support Files/Pods-Bookstore/Pods-Bookstore.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,7 +72,6 @@
 				2133892327E3B9CD002439A3 /* Controllers */,
 				2133890827E3B0D7002439A3 /* AppDelegate.swift */,
 				2133890A27E3B0D7002439A3 /* SceneDelegate.swift */,
-				2133890C27E3B0D7002439A3 /* ViewController.swift */,
 				2133891427E3B0D9002439A3 /* Assets.xcassets */,
 				2133891627E3B0D9002439A3 /* LaunchScreen.storyboard */,
 				2133891927E3B0D9002439A3 /* Info.plist */,
@@ -86,6 +85,7 @@
 		2133892327E3B9CD002439A3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2133892627E3BA1E002439A3 /* SplashViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -237,10 +237,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2133890D27E3B0D7002439A3 /* ViewController.swift in Sources */,
 				2133890927E3B0D7002439A3 /* AppDelegate.swift in Sources */,
 				2133891327E3B0D7002439A3 /* Bookstore.xcdatamodeld in Sources */,
 				2133890B27E3B0D7002439A3 /* SceneDelegate.swift in Sources */,
+				2133892727E3BA1E002439A3 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
