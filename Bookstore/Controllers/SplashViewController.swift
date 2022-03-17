@@ -72,7 +72,13 @@ class SplashViewController: UIViewController {
         startButton.setTitle("Get Started", for: .normal)
         captionLabel.text = "Already have an account? Login"
         
+        startButton.addTarget(self, action: #selector(goForward(_:)), for: .touchUpInside)
+        
         layout()
+    }
+    
+    @objc func goForward(_ sender: UIButton) {
+        print("Button Pressed")
     }
 }
 
