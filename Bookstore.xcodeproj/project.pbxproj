@@ -67,6 +67,9 @@
 		2133890727E3B0D7002439A3 /* Bookstore */ = {
 			isa = PBXGroup;
 			children = (
+				2133892527E3B9E0002439A3 /* Models */,
+				2133892427E3B9D6002439A3 /* Views */,
+				2133892327E3B9CD002439A3 /* Controllers */,
 				2133890827E3B0D7002439A3 /* AppDelegate.swift */,
 				2133890A27E3B0D7002439A3 /* SceneDelegate.swift */,
 				2133890C27E3B0D7002439A3 /* ViewController.swift */,
@@ -80,13 +83,33 @@
 			path = Bookstore;
 			sourceTree = "<group>";
 		};
+		2133892327E3B9CD002439A3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2133892427E3B9D6002439A3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2133892527E3B9E0002439A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		5E2039609AECBC5E84C1ED92 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				1A3BD3B73D765AADF9F3920C /* Pods-Bookstore.debug.xcconfig */,
 				90CC3BDE57528E272FA5E991 /* Pods-Bookstore.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
