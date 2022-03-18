@@ -16,11 +16,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         let rootViewController = SplashViewController()
+        let navController = UINavigationController()
+        navController.pushViewController(rootViewController, animated: true)
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         window?.makeKeyAndVisible()
-        window?.rootViewController = rootViewController
+        window?.rootViewController = navController
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {

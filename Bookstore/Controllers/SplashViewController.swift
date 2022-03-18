@@ -78,7 +78,8 @@ class SplashViewController: UIViewController {
     }
     
     @objc func goForward(_ sender: UIButton) {
-        print("Button Pressed")
+        let authVC = AuthViewController()
+        navigationController?.pushViewController(authVC, animated: true)
     }
 }
 
@@ -98,7 +99,7 @@ extension SplashViewController {
         
         contentView.addSubview(illustration)
         illustration.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(72)
+            make.top.equalToSuperview().offset(16)
             make.left.right.equalToSuperview().inset(25)
         }
         
